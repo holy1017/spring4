@@ -1,5 +1,24 @@
 <html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script> $.ajax({ 
+		type: "GET", 
+		url: "/valueTest", 
+		success: (data) => { 
+			console.log(data); 
+			$('#contents').html(data); 
+			} 
+		}); 
+	</script>
+</head>
 <body>
-<p>help</p>
+
+	<p>help</p>
+	
+	<h1>Hello World!</h1> 
+	<div id="contents"> </div>
+	
+	<p>출처: https://goddaehee.tistory.com/203?category=367461 [갓대희의 작은공간]</p>
+
 </body>
 </html>
