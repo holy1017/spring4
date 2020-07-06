@@ -12,7 +12,7 @@ import lombok.var;
 import util.Log;
 
 @Controller
-public class MainController {
+public class ControllerNomal {
 
 	@RequestMapping(value = "/index")
 	public String index() {
@@ -54,5 +54,5 @@ public class MainController {
 	}
 
   //  출처: https://goddaehee.tistory.com/203?category=367461 [갓대희의 작은공간]
-    
+
 }

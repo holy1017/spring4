@@ -1,14 +1,23 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-	<script> $.ajax({ 
+	<script> 
+	$.ajax({ 
 		type: "GET", 
 		url: "/valueTest", 
 		success: (data) => { 
 			console.log(data); 
 			$('#contents').html(data); 
-			} 
-		}); 
+		} 
+	}); 
+	$.ajax({ 
+		type: "GET", 
+		url: "/testValue", 
+		success: (data) => { 
+			console.log(data); 
+			$('#contents2').html(data); 
+		} 
+	}); 
 	</script>
 </head>
 <body>
@@ -17,6 +26,7 @@
 	
 	<h1>Hello World!</h1> 
 	<div id="contents"> </div>
+	<div id="contents2"> </div>
 	
 	<p>출처: https://goddaehee.tistory.com/203?category=367461 [갓대희의 작은공간]</p>
 
